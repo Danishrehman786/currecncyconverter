@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>💱 Currency Converter</h1>
+        <input type="number" id="amount" class="amount-input" placeholder="Enter amount" />
+        <button onclick="swapCurrencies()" class="swap">🔄 Swap</button>
+        <div class="dropdowns">
+            <select id="fromCurrency">
+                <option value="" disabled selected>From</option>
+            </select>
+            <select id="toCurrency">
+                <option value="" disabled selected>To</option>
+            </select>
+        </div>
+
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
